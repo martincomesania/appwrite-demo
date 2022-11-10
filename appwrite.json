@@ -1,0 +1,23 @@
+{
+    "projectId": "63681a6aa714dbe924b2",
+    "projectName": "serverless",
+    "functions": [
+        {
+            "$id": "6368fb75d171af032973",
+            "name": "modify-docs",
+            "runtime": "node-16.0",
+            "path": "functions/modify-docs",
+            "entrypoint": "src/index.js",
+            "ignore": [
+                "node_modules",
+                ".npm"
+            ],
+            "execute": [],
+            "events": [
+                "databases.*.collections.*.documents.*.create"
+            ],
+            "schedule": "",
+            "timeout": 15
+        }
+    ]
+}
